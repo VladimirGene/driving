@@ -1,0 +1,64 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+
+.body {
+    font-family: "Montserrat", "Century Gothic", sans-serif;
+    font-size: 16px;
+    color: #FFF;
+    font-style: normal;
+    line-height: normal;
+}
+
+.body {
+    &.modal--open {
+        overflow: hidden;
+    }
+
+    &.modal--open-black {
+        overflow: hidden;
+    }
+}
+
+.wrapper {
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: url('../image/background/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+
+.main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1335px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.button {
+    cursor: pointer;
+    display: inline-block;
+    background: #D9E454;
+    filter: drop-shadow(0px 0px 11px #D9E454);
+    color: #515151;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    padding: 30px 33px;
+    box-shadow: 2px 2px 2px #888888;
+    border-radius: 40px 40px 40px 40px / 200% 200%;
+    transition: all .8s;
+    text-align: center;
+}

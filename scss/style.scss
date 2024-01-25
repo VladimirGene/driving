@@ -1,0 +1,781 @@
+@import "reset";
+@import "fonts";
+@import "global";
+
+// HEADER========================================================================================
+
+.header {
+  position: relative;
+}
+
+.header {
+  &__nav {
+    display: flex;
+    gap: 91px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__welcome {
+    display: flex;
+    gap: 10px;
+    position: relative;
+  }
+
+}
+
+.nav {
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__marafon {
+    min-width: 270px;
+    text-align: right;
+
+    h3 {
+      font-family: 'Montserrat';
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.39px;
+    }
+
+    p {
+      font-family: 'Montserrat';
+      font-size: 11px;
+      font-weight: 300;
+      letter-spacing: 0.33px;
+
+    }
+  }
+
+  &__start {
+    min-width: 270px;
+
+    h3 {
+      font-family: 'Montserrat';
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.39px;
+    }
+
+    p {
+      font-family: 'Montserrat';
+      font-size: 11px;
+      font-weight: 300;
+      letter-spacing: 0.33px;
+    }
+  }
+}
+
+
+.welcome {
+  &__info {
+    padding-top: 80px;
+    padding-left: 15px;
+  }
+
+  &__visit {
+    white-space: nowrap;
+  }
+
+  &__colpac-mobile {
+    display: none;
+  }
+
+  &__title {
+    font-family: 'Montserrat';
+    font-size: 43px;
+    font-weight: 700;
+    letter-spacing: 1.29px;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    font-family: 'Montserrat';
+    font-size: 43px;
+
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 1.29px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-weight: 600;
+
+    span {
+      font-weight: 300;
+    }
+  }
+
+  &__record {
+    padding-top: 53px;
+    max-width: 300px;
+
+    h3 {
+      font-family: 'Century Gothic';
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.42px;
+      padding: 18px 32px;
+      transform: skew(15deg);
+    }
+  }
+
+  &__control {
+    display: flex;
+    gap: 91px;
+    padding-top: 70px;
+    position: relative;
+    align-items: center;
+  }
+
+  &__img {
+    margin-top: 70px;
+
+    img {
+      width: 120%;
+      min-width: 400px;
+    }
+  }
+
+  &__img-mobile {
+    display: none;
+  }
+}
+
+
+.record__title {
+  background: linear-gradient(90deg, rgba(147, 208, 252, 0.30) 0.1%, rgba(210, 166, 255, 0.30) 95.31%);
+  box-shadow: 0px 0px 9px 0px rgba(255, 255, 255, 0.35) inset;
+  transform: skew(-15deg);
+  backdrop-filter: blur(3.5px);
+  border-radius: 5px;
+  position: relative;
+}
+
+.record__title::before {
+  content: '';
+  background: url('../image/icon/colpac.png');
+  background-repeat: no-repeat;
+  width: 110px;
+  height: 130px;
+  top: -49%;
+  left: -26%;
+  display: block;
+  position: absolute;
+}
+
+.control__text {
+  display: block;
+  min-width: 174px;
+  font-family: 'Century Gothic';
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+
+  span {
+    font-weight: 400;
+  }
+}
+
+.control__sale {
+  position: absolute;
+  top: 40%;
+  right: -80%;
+  rotate: 25deg;
+  border: 0.5px solid #fff;
+  padding: 10px 12px;
+  border-radius: 22px;
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
+
+
+.control__arrow {
+  position: absolute;
+  bottom: -25%;
+  left: 75%;
+}
+
+.control__arrow-mobile {
+  display: none;
+}
+
+// MAIN-TASK=========================================================================================
+
+.main {
+  &__tasks {
+    margin-top: 80vh;
+    margin-bottom: 30vh;
+  }
+
+}
+
+
+.tasks {
+  &__info {
+    padding-bottom: 60px;
+  }
+
+  &__title {
+    font-family: 'Montserrat';
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 26px;
+    letter-spacing: 0.78px;
+  }
+}
+
+.swiper-cube .swiper-slide-active,
+.swiper-cube .swiper-slide-next,
+.swiper-cube .swiper-slide-prev {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: darkgray !important;
+  transition: all .8s;
+}
+
+// MAIN-ABOUT===================================================================================================
+.main__about {
+  margin-bottom: 20vh;
+}
+
+.about {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__head-mobile {
+    display: none;
+  }
+
+  &__key {
+    margin-left: -92px;
+    margin-top: 25px;
+    margin-bottom: -100px;
+  }
+
+  &__text {
+    border: 1px solid #343434;
+    border-radius: 10px;
+    padding: 31px 30px;
+    max-width: 500px;
+
+    span {
+      font-family: "Century Gothic";
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
+
+  &__img {
+    position: relative;
+
+    img {
+      width: 700px;
+      margin-top: -140px;
+    }
+  }
+
+  &__notebook-mobile {
+    display: none;
+  }
+
+  &__footnote {
+    width: 542px;
+    padding: 18px 34px;
+    background-image: linear-gradient(90deg, rgb(128 197 246 / 81%) 0.1%, rgb(229 203 255 / 56%) 95.31%);
+    box-shadow: 0px 0px 9px 0px rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(0.35em);
+    border-radius: 80px 80px 80px 80px / 200% 200%;
+    margin-left: 50px;
+    margin-top: -22px;
+  }
+
+  &__play {
+    position: absolute;
+    bottom: 20%;
+    left: 30%;
+  }
+}
+
+.title {
+  font-family: 'Montserrat';
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.subtitle {
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 26px;
+  font-weight: 300;
+  letter-spacing: 0.78px;
+}
+
+.text {
+  &__heading {
+    font-family: "Century Gothic";
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+  }
+
+  &__info {
+    font-family: "Century Gothic";
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 60px;
+  }
+
+  &__info:nth-child(4) {
+    padding-bottom: 20px;
+  }
+
+  &__bottom {
+    font-family: "Century Gothic";
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 58px;
+  }
+}
+
+.footnote__title {
+  font-family: 'Montserrat';
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.39px;
+  text-transform: uppercase;
+  padding-bottom: 4px;
+}
+
+.footnote__text {
+  font-family: "Century Gothic";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14.14px;
+}
+
+//MAIN-REWARD===================================================================================================
+
+.main__reward {
+  background: url('../image/background/4words.png');
+  background-position: left top;
+  background-repeat: no-repeat;
+  margin-top: -5px;
+  margin-bottom: 30vh;
+}
+
+
+.reward__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.reward__title {
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+}
+
+.reward__subtitle {
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 26px;
+  font-weight: 300;
+  letter-spacing: 0.78px;
+  padding-bottom: 60px;
+}
+
+.reward__text {
+  text-align: center;
+  font-family: "Century Gothic";
+  font-size: 17px;
+  font-style: italic;
+  font-weight: 400;
+  text-transform: uppercase;
+  max-width: 674px;
+}
+
+.reward__content {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.reward__category-a {
+  max-width: 460px;
+  margin-top: 134px;
+  border-radius: 11px;
+  background: #E1E1E1;
+  padding: 22px 34px;
+  position: relative;
+  max-height: 262px;
+}
+
+.category-a__title {
+  color: #4B4B4B;
+  text-align: center;
+  font-family: "Century Gothic";
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.category-a__text {
+  color: #4B4B4B;
+  font-family: "Century Gothic";
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.category-a__text:last-child {
+  margin-bottom: 0;
+}
+
+.reward__category-b {
+  max-width: 439px;
+  margin-top: 210px;
+  border-radius: 11px;
+  background: #E1E1E1;
+  padding: 22px 31px;
+  position: relative;
+}
+
+.category-b__title {
+  color: #4B4B4B;
+  text-align: center;
+  font-family: "Century Gothic";
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+
+}
+
+.category-b__text {
+  color: #4B4B4B;
+  font-family: "Century Gothic";
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.category-b__text:last-child {
+  margin-bottom: 0;
+}
+
+.a-img {
+  position: absolute;
+  bottom: -20%;
+  left: -19%;
+
+  img {
+    transform: rotate(305deg);
+    width: 100%;
+  }
+}
+
+.b-img {
+  position: absolute;
+  top: -30%;
+  right: -17%;
+
+  img {
+    width: 100%;
+  }
+}
+
+// ACCARDEON=======================================================================================================
+.main__questions {
+  margin-bottom: 20vh;
+}
+
+
+
+.questions__head-desktop {
+  max-width: 750px;
+  padding-bottom: 20px;
+}
+
+.accordeon {
+  max-width: 1140px;
+  padding-bottom: 20px;
+
+}
+
+.accordeon__control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #3E3E3E 0%, #232323 100%);
+  padding: 29px 40px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.accordeon__title {
+  color: #FFF;
+  font-family: "Century Gothic";
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.accordeon__icon {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  transition: all .3s ease-in-out;
+  flex-shrink: 0;
+}
+
+.accordeon__icon::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 5px;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.accordeon__icon::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 5px;
+  height: 100%;
+  background: #fff;
+  border-radius: 20px;
+}
+
+
+.accordeon__content {
+  background: #E1E1E1;
+  color: #000;
+  font-family: "Century Gothic";
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0px 40px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  max-width: 960px;
+  margin-left: 50px;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  will-change: max-height;
+  transition: all .3s ease-in-out;
+  box-sizing: content-box;
+}
+
+.open .accordeon__content {
+  opacity: 1;
+  padding: 35px 40px;
+}
+
+.open .accordeon__icon {
+  transform: rotate(225deg);
+}
+
+// FOOTER====================================================================================================
+.footer {
+  padding-top: 20vh;
+}
+
+
+.footer__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__title {
+  padding-top: 30vh;
+}
+.footer__subtitle {
+  padding-bottom: 60px;
+}
+
+
+
+.footer__control {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 30px;
+  margin-right: 125px;
+}
+
+.footer__sale-mobile {
+  display: none;
+}
+
+
+.footer__text {
+  text-align: center;
+  font-family: "Century Gothic";
+  font-size: 17px;
+  font-style: italic;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  span {
+    font-weight: 700;
+  }
+
+  padding-bottom: 10px;
+}
+
+.footer__inc {
+  display: flex;
+  margin-top: 60px;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.footer__logo {
+  p {
+    color: #FFF;
+    font-family: "Century Gothic";
+    font-size: 8px;
+    font-weight: 400;
+    letter-spacing: 1.627px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.footer__made {
+  white-space: nowrap;
+  font-family: "Century Gothic";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.42px;
+}
+
+.footer__privacy {
+  white-space: nowrap;
+
+  a {
+    text-decoration: underline;
+  }
+
+  font-family: "Century Gothic";
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+}
+
+
+
+
+
+// TIMER=========================================================================================================
+
+.timer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 65px;
+}
+
+
+.timer__items {
+  display: flex;
+  font-size: 48px;
+  color: #FFF;
+  font-family: 'Montserrat';
+  font-size: 80px;
+  font-weight: 600;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+
+.timer__item {
+  position: relative;
+  min-width: 60px;
+  margin-left: 60px;
+  margin-right: 45px;
+  padding-bottom: 15px;
+  text-align: center;
+  color: #FFF;
+  font-family: 'Montserrat';
+  font-size: 80px;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.timer__item::before {
+  content: attr(data-title);
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  color: #FFF;
+  font-family: "Century Gothic";
+  font-size: 17px;
+  font-style: italic;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.timer__item:not(:last-child)::after {
+  content: ':';
+  position: absolute;
+  right: -62px;
+}
+
+
+// MODAL================================================================================================
+
+@import "modal";
+
+// ADAPTIV-MOBILE================================================================================================
+
+@import "mobile";
+
+

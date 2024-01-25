@@ -1,0 +1,219 @@
+// MODAL-WHITE===================================
+
+.modal {
+    background: linear-gradient(0deg, rgba(182, 111, 255, 0.15) 0%, rgba(182, 111, 255, 0.15) 100%), rgba(0, 0, 0, 0.60);
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .8s;
+    z-index: 2;
+}
+
+.modal-wrapper {
+    color: #383838;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 550px;
+    height: 650px;
+    border-radius: 15px;
+    padding: 20px 50px;
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .8s;
+}
+
+.modal--open .modal {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal--open .modal-wrapper {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0%);
+}
+
+.modal__title {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+    padding-bottom: 9px;
+    text-transform: uppercase;
+}
+
+.modal__start {
+    font-family: "Century Gothic";
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    padding-bottom: 20px;
+
+    span {
+        font-weight: 700;
+    }
+
+    text-transform: uppercase;
+}
+
+.modal__text {
+    text-align: center;
+    font-family: "Century Gothic";
+    font-size: 14px;
+    font-weight: 400;
+
+    span {
+        font-weight: 700;
+    }
+
+    padding-bottom: 20px;
+}
+
+.modal__form {
+    font-family: "Century Gothic";
+    font-size: 14px;
+    font-weight: 400;
+
+    p {
+        margin-bottom: 6px;
+    }
+}
+
+.modal__name,
+.modal__location,
+.modal__tel,
+.modal__email {
+    padding: 17px;
+    border-radius: 10px;
+    background: #EFEFEF;
+    width: 429px;
+    margin-bottom: 10px;
+}
+
+.modal__email {
+    margin-bottom: 40px;
+}
+
+.modal__button {
+    width: 330px;
+}
+
+// MODAL-BLACK=====================
+.modal-black {
+    background: linear-gradient(0deg, rgba(3, 3, 3, 0.15) 0%, rgba(1, 1, 1, 0.15) 100%), rgba(0, 0, 0, 0.60);
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .8s;
+    z-index: 2;
+}
+
+.modal-wrapper-black {
+    backdrop-filter: blur(15px);
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0.17) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 550px;
+    height: 650px;
+    border-radius: 15px;
+    padding: 20px 50px;
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .8s;
+    border: 5px solid #5e5d7e24;
+}
+
+.modal--open-black .modal-black {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal--open-black .modal-wrapper-black {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0%);
+}
+
+.modal__title-black {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+    text-transform: uppercase;
+    padding-bottom: 9px;
+}
+
+.modal__start-black {
+    color: #FFF;
+    font-family: "Century Gothic";
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+
+    span {
+        font-weight: 700;
+    }
+
+    padding-bottom: 20px;
+}
+
+.modal__text-black {
+    color: #FFF;
+    text-align: center;
+    font-family: "Century Gothic";
+    font-size: 14px;
+    font-weight: 400;
+
+    span {
+        font-weight: 700;
+    }
+
+    padding-bottom: 20px;
+}
+
+.modal__form-black {
+    color: #7E7E7E;
+    font-family: "Century Gothic";
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 30px;
+
+    p {
+        color: #FFF;
+        margin-bottom: 6px;
+    }
+}
+
+.modal__name-black,
+.modal__location-black,
+.modal__tel-black,
+.modal__email-black {
+    padding: 17px;
+    border-radius: 10px;
+    background: #3D3D3D;
+    width: 429px;
+    margin-bottom: 15px;
+}
+
+.modal__button-black {
+    padding-bottom: 30px;
+}

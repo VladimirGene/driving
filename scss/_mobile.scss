@@ -1,0 +1,609 @@
+@media (max-width: 1200px) {
+
+    .wrapper {
+        min-height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        background: url('../image/background/bgmobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .header {
+        &__nav {
+            gap: 15px;
+        }
+
+        &__welcome {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+
+    .welcome {
+
+        &__title,
+        &__subtitle {
+            font-size: 16px;
+        }
+
+        &__text {
+            font-size: 12px;
+        }
+
+        &__img-mobile {
+            img {
+                width: 45%;
+            }
+        }
+    }
+
+    .welcome {
+        &__info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-self: center;
+            align-content: center;
+            position: relative;
+        }
+
+        &__colpac-mobile {
+            img {
+                width: 80%;
+            }
+
+            display: flex;
+            position: absolute;
+            top: -6%;
+            left: 0%;
+
+        }
+
+        &__img {
+            display: none;
+        }
+
+        &__img-mobile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+
+        &__visit {
+            text-align: center;
+        }
+
+        &__record {
+            padding-top: 0;
+            max-width: 300px;
+
+        }
+
+        &__control {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 23px;
+            gap: 45px;
+            padding-bottom: 140px;
+        }
+    }
+
+
+    .control {
+        &__arrow {
+            display: none;
+        }
+
+        &__arrow-mobile {
+            display: flex;
+            margin-top: -30px;
+        }
+
+        &__mobile {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        &__sale {
+            top: 34%;
+            right: 0%;
+            font-size: 9px;
+            padding: 5px 6px;
+        }
+    }
+
+    .about {
+        &__wrapper {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__img {
+            img {
+                width: 100%;
+            }
+        }
+
+        &__notebook {
+            display: none;
+        }
+
+        &__notebook-mobile {
+            display: block;
+        }
+
+        &__play {
+            position: absolute;
+            bottom: -15%;
+            left: 30%;
+        }
+
+        &__info {
+            max-width: 500px;
+            margin-top: -60px;
+        }
+
+        &__footnote {
+            max-width: 400px;
+            margin-left: 55px;
+            margin-top: -22px;
+        }
+
+        &__head-desktop {
+            display: none;
+        }
+
+        &__head-mobile {
+            display: block;
+            padding-bottom: 100px;
+        }
+
+        &__text {
+            text-align: center;
+        }
+
+        &__key {
+            margin-left: 407px;
+        }
+    }
+
+    .main__tasks {
+        margin-top: 20vh;
+        margin-bottom: 10vh;
+    }
+
+    .text__heading {
+        font-size: 14px;
+    }
+
+    .text__info {
+        font-size: 11px;
+    }
+
+    .footnote__title {
+        font-size: 14px;
+    }
+
+    .footnote__text {
+        font-size: 11px;
+    }
+
+    .main__reward {
+        margin-bottom: 10vh;
+    }
+
+    .main__questions {
+        margin-bottom: 0vh;
+    }
+
+    .reward__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .b-img {
+        position: absolute;
+        top: 80%;
+        right: -17%;
+    }
+
+    .reward__category-b {
+        margin-top: 60px;
+
+    }
+
+    .reward__category-a {
+        margin-top: 60px;
+        max-height: none;
+    }
+
+
+}
+
+
+@media (max-width: 1000px) {
+
+
+    .nav__marafon {
+        visibility: hidden;
+    }
+
+    .welcome {
+
+        &__title,
+        &__subtitle {
+            font-size: 16px;
+        }
+
+        &__text {
+            font-size: 12px;
+        }
+
+    }
+
+
+    .record__title {
+        font-size: 10px;
+    }
+
+    .tasks__info {
+        text-align: center;
+
+        h3 {
+            font-size: 19px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
+
+    .footer__sale {
+        display: none;
+    }
+
+    .footer__sale-mobile {
+        display: block;
+    }
+
+    .footer__control {
+        display: grid;
+        grid-template-columns: 0.3fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        margin-right: 0px;
+    }
+
+    .footer__inst {
+        grid-area: 1/2;
+    }
+
+    .footer__title {
+        text-align: center;
+        font-size: 19px;
+    }
+
+    .footer__subtitle {
+        font-size: 12px;
+    }
+
+    .footer__text {
+        font-size: 11px;
+    }
+
+    .footer__inc {
+        display: flex;
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .timer__item {
+        font-size: 48px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .timer__item:not(:last-child)::after {
+        right: -16px;
+    }
+
+    .timer__item::before {
+        font-size: 10px;
+    }
+
+}
+
+//======================================================================================================== 
+
+@media (max-width: 800px) {
+    .nav__logo {
+        img {
+            max-width: 220px;
+        }
+    }
+
+
+    .welcome__colpac-mobile {
+        img {
+            width: 50%;
+        }
+
+        display: flex;
+        position: absolute;
+        top: 0%;
+        left: 10%;
+
+    }
+
+    .modal-wrapper {
+        width: 600px;
+    }
+
+    .modal-wrapper-black {
+        width: 600px;
+    }
+
+    .welcome__img-mobile {
+        img {
+            width: 70%;
+        }
+    }
+
+}
+
+
+
+@media (max-width: 600px) {
+    .nav__logo {
+        img {
+            max-width: 180px;
+        }
+    }
+
+    .welcome__img-mobile {
+        img {
+            width: 100%;
+        }
+    }
+
+    .welcome__colpac-mobile {
+        img {
+            width: 50%;
+        }
+
+        display: flex;
+        position: absolute;
+        top: 0%;
+        left: -5%;
+
+    }
+
+    .about__info {
+        max-width: 300px;
+    }
+
+    .about__footnote {
+        max-width: 280px;
+        margin-left: 12px;
+        margin-top: -22px;
+    }
+
+    .about__key {
+        margin-left: 207px;
+    }
+
+    .reward__title {
+        font-size: 19px;
+    }
+
+    .reward__subtitle {
+        font-size: 12px;
+        padding-bottom: 30px;
+    }
+
+    .reward__text {
+        font-size: 11px;
+    }
+
+    .modal-wrapper {
+        width: 400px;
+        height: 600px;
+    }
+
+    .modal-wrapper-black {
+        width: 400px;
+        height: 600px;
+    }
+
+    .modal__title {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .modal__title-black {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .modal__start,
+    .modal__text {
+        display: none;
+    }
+
+    .modal__start-black,
+    .modal__text-black {
+        display: none;
+    }
+
+    .modal__name,
+    .modal__location,
+    .modal__tel,
+    .modal__email {
+        width: 300px;
+    }
+
+    .modal__name-black,
+    .modal__location-black,
+    .modal__tel-black,
+    .modal__email-black {
+        width: 300px;
+    }
+
+    .accordeon__title {
+        font-size: 14px;
+    }
+
+
+}
+
+//======================================================================================================== 
+
+@media (max-width: 450px) {
+    .nav__logo {
+        img {
+            max-width: 120px;
+        }
+    }
+
+    .nav__start {
+
+        p,
+        h3 {
+            font-size: 9px;
+        }
+    }
+
+
+    .welcome__img-mobile {
+        img {
+            width: 130%;
+        }
+    }
+
+    .welcome__colpac-mobile {
+        img {
+            width: 50%;
+        }
+
+        display: flex;
+        position: absolute;
+        top: -3%;
+        left: -18%;
+
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none !important;
+    }
+
+    .modal-wrapper {
+        width: 280px;
+        height: 430px;
+    }
+
+    .modal-wrapper-black {
+        width: 280px;
+        height: 450px;
+    }
+
+    .modal__name,
+    .modal__location,
+    .modal__tel,
+    .modal__email {
+        width: 250px;
+    }
+
+    .modal__name-black,
+    .modal__location-black,
+    .modal__tel-black,
+    .modal__email-black {
+        width: 250px;
+    }
+
+    .modal__button {
+        width: 280px;
+    }
+
+    .modal__button-black {
+        width: 280px;
+    }
+
+    .footer__control {
+        max-width: 400px;
+        gap: 15px;
+    }
+
+
+
+}
+
+
+//======================================================================================================== 
+
+@media (max-width: 350px) {
+
+    .header__nav {
+        gap: 5px;
+    }
+
+    .welcome__visit {
+        white-space: pre-line;
+    }
+
+    .about__play {
+        position: absolute;
+        bottom: -23%;
+        left: 40%;
+
+        svg {
+            width: 140%;
+        }
+    }
+
+    .footer__control {
+        max-width: 300px;
+    }
+
+}
+
+//======================================================================================================== 
+
+@media (hover: hover) {
+
+    .button:hover {
+        filter: none;
+    }
+
+    .footer__inst:hover {
+        g {
+            filter: none;
+        }
+    }
+
+
+    .swiper-button-prev:hover,
+    .swiper-button-next:hover {
+        color: rgb(88, 88, 79) !important;
+    }
+}
