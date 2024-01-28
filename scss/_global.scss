@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 20px;
+    
 }
 
 .body {
@@ -9,6 +10,7 @@ html {
     color: #FFF;
     font-style: normal;
     line-height: normal;
+    padding: 0 calc(20px - (100vw - 100%)) 0 0;
 }
 
 .body {

@@ -78,11 +78,14 @@
 }
 
 .modal__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: "Century Gothic";
     font-size: 14px;
     font-weight: 400;
 
-    p {
+    label {
         margin-bottom: 6px;
     }
 }
@@ -103,6 +106,7 @@
 }
 
 .modal__button {
+
     width: 330px;
 }
 
@@ -191,13 +195,16 @@
 }
 
 .modal__form-black {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: #7E7E7E;
     font-family: "Century Gothic";
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 30px;
 
-    p {
+    label {
         color: #FFF;
         margin-bottom: 6px;
     }
@@ -212,8 +219,10 @@
     background: #3D3D3D;
     width: 429px;
     margin-bottom: 15px;
+    color: azure;
 }
 
 .modal__button-black {
     padding-bottom: 30px;
+    margin-top: 15px;
 }

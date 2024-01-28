@@ -27,15 +27,13 @@ const swiper = new Swiper(".swiper", {
   const modalBlack = document.querySelector(".modal-black");
   const btnModal = document.querySelector(".control__button");
   const btnFooter = document.querySelector(".footer__button");
-  const regBtn = document.querySelector(".modal__button");
-  const regBtnBlack = document.querySelector(".modal__button-black");
+  
 
   btnModal.addEventListener("click", openModal);
   btnFooter.addEventListener("click", openFooter);
   modal.addEventListener("click", closeModal);
   modalBlack.addEventListener("click", closeFooter);
-  regBtn.addEventListener("click", regClose);
-  regBtnBlack.addEventListener("click", regCloseBlack);
+  
   function openModal(e) {
     e.preventDefault();
     document.body.classList.toggle("modal--open");
@@ -56,18 +54,8 @@ const swiper = new Swiper(".swiper", {
       document.body.classList.remove("modal--open-black");
     }
   }
-  function regClose(e) {
-    e.preventDefault();
-    if (e.target.classList.contains("modal__button")) {
-      document.body.classList.remove("modal--open");
-    }
-  }
-  function regCloseBlack(e) {
-    e.preventDefault();
-    if (e.target.classList.contains("modal__button-black")) {
-      document.body.classList.remove("modal--open-black");
-    }
-  }
+  
+  
 
 
   // ACCARDEON===============================
@@ -78,7 +66,6 @@ const swiper = new Swiper(".swiper", {
   accardeons.forEach(el => {
     el.addEventListener('click', (e) => {
       const self = e.currentTarget;
-      const control = self.querySelector(".accordeon__control");
       const content = self.querySelector(".accordeon__content");
 
       self.classList.toggle("open");
@@ -129,4 +116,27 @@ const swiper = new Swiper(".swiper", {
     });
 
   });
+
+// маска телефона
+$('.modal__tel-black').mask('+7 (999) 999-99-99');
+$('.modal__tel').mask('+7 (999) 999-99-99');
+
+
+$.fn.setCursorPosition = function (pos) {
+  if ($(this).get(0).setSelectionRange) {
+    $(this).get(0).setSelectionRange(pos, pos);
+  } else if ($(this).get(0).createTextRange) {
+    var range = $(this).get(0).createTextRange();
+    range.collapse(true);
+    range.moveEnd('character', pos);
+    range.moveStart('character', pos);
+    range.select();
+  }
+};
+
+
+$('input[type="tel"]').click(function () {
+  $(this).setCursorPosition(4);  // set position number
+});
+
 })();
