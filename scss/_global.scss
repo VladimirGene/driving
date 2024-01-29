@@ -4,22 +4,28 @@ html {
     
 }
 
+.body::-webkit-scrollbar {
+    width: 0;
+}
+
 .body {
     font-family: "Montserrat", "Century Gothic", sans-serif;
     font-size: 16px;
     color: #FFF;
     font-style: normal;
     line-height: normal;
-    padding: 0 calc(20px - (100vw - 100%)) 0 0;
+    
 }
+
 
 .body {
     &.modal--open {
-        overflow: hidden;
+        overflow-y: hidden;
+        
     }
 
     &.modal--open-black {
-        overflow: hidden;
+        overflow-y: hidden;
     }
 }
 
@@ -33,6 +39,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
+    
 }
 
 
@@ -63,4 +70,13 @@ html {
     border-radius: 40px 40px 40px 40px / 200% 200%;
     transition: all .8s;
     text-align: center;
+}
+.disable-scroll {
+	position: relative;
+	overflow: hidden;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
 }

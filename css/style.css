@@ -138,20 +138,23 @@ html {
   scroll-padding-top: 20px;
 }
 
+.body::-webkit-scrollbar {
+  width: 0;
+}
+
 .body {
   font-family: "Montserrat", "Century Gothic", sans-serif;
   font-size: 16px;
   color: #FFF;
   font-style: normal;
   line-height: normal;
-  padding: 0 calc(20px - (100vw - 100%)) 0 0;
 }
 
 .body.modal--open {
-  overflow: hidden;
+  overflow-y: hidden;
 }
 .body.modal--open-black {
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 .wrapper {
@@ -203,6 +206,16 @@ html {
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
   text-align: center;
+}
+
+.disable-scroll {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 
 .header {
